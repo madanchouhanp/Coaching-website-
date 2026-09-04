@@ -1,166 +1,185 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shreeji Institute | Khargone</title>
+<title>Shreeji Institute | Khargone</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        body {
-            background: #f5f7fb;
-            color: #222;
-            line-height: 1.6;
-        }
+body{
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
 
-        header {
-            background: #123c73;
-            color: white;
-            padding: 18px 20px;
-            text-align: center;
-        }
+header{
+    background:linear-gradient(135deg,#173b8f,#245dcc);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
 
-        header h1 {
-            font-size: 30px;
-        }
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
 
-        header p {
-            margin-top: 5px;
-            font-size: 15px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
 
-        nav {
-            background: white;
-            padding: 12px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
+.hero{
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(135deg,#e8f0ff,#ffffff);
+}
 
-        nav a {
-            text-decoration: none;
-            color: #123c73;
-            font-weight: bold;
-            margin: 0 10px;
-        }
+.hero h1{
+    font-size:45px;
+    color:#173b8f;
+    margin-bottom:15px;
+}
 
-        .hero {
-            background: linear-gradient(135deg, #123c73, #1976d2);
-            color: white;
-            text-align: center;
-            padding: 70px 20px;
-        }
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
 
-        .hero h2 {
-            font-size: 38px;
-            margin-bottom: 12px;
-        }
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    background:#ff7a00;
+    color:white;
+    text-decoration:none;
+    border-radius:7px;
+    font-weight:bold;
+    margin:5px;
+}
 
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
+.btn:hover{
+    opacity:.85;
+}
 
-        .btn {
-            display: inline-block;
-            background: #ffb300;
-            color: #111;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+section{
+    padding:60px 8%;
+}
 
-        section {
-            padding: 45px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+.section-title{
+    text-align:center;
+    color:#173b8f;
+    font-size:32px;
+    margin-bottom:30px;
+}
 
-        .title {
-            text-align: center;
-            color: #123c73;
-            margin-bottom: 30px;
-            font-size: 30px;
-        }
+.about{
+    background:white;
+    text-align:center;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
 
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
+.course{
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
 
-        .card h3 {
-            color: #123c73;
-            margin-bottom: 10px;
-        }
+.course h3{
+    color:#173b8f;
+    margin-bottom:10px;
+}
 
-        .about {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            text-align: center;
-        }
+.contact{
+    background:#173b8f;
+    color:white;
+    text-align:center;
+}
 
-        .contact {
-            text-align: center;
-        }
+.contact .section-title{
+    color:white;
+}
 
-        .contact p {
-            margin: 10px 0;
-            font-size: 17px;
-        }
+.contact p{
+    font-size:18px;
+    margin:8px;
+}
 
-        footer {
-            background: #123c73;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
+footer{
+    background:#101d38;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 25px;
-            }
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:27px;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
 
-            nav a {
-                display: inline-block;
-                margin: 5px;
-                font-size: 14px;
-            }
+@media(max-width:700px){
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
 
-            .hero h2 {
-                font-size: 30px;
-            }
-        }
-    </style>
+    nav a{
+        margin:0 7px;
+        font-size:14px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Shreeji Institute</h1>
-        <p>Quality Education • Better Guidance • Bright Future</p>
-    </header>
+<header>
+    <div class="logo">Shreeji Institute</div>
 
     <nav>
         <a href="#home">Home</a>
@@ -168,70 +187,101 @@
         <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
     </nav>
+</header>
 
-    <section class="hero" id="home">
-        <h2>Welcome to Shreeji Institute</h2>
-        <p>अपने लक्ष्य को सफलता में बदलने की शुरुआत आज से करें।</p>
+<section class="hero" id="home">
+    <div>
+        <h1>Welcome to Shreeji Institute</h1>
+
+        <p>
+            Quality Education • Better Guidance • Bright Future
+        </p>
+
+        <p>
+            📍 Gandi Nagar, Khargone
+        </p>
+
         <a href="#contact" class="btn">Admission Enquiry</a>
-    </section>
+    </div>
+</section>
 
-    <section id="about">
-        <h2 class="title">About Shreeji Institute</h2>
+<section class="about" id="about">
+    <h2 class="section-title">About Shreeji Institute</h2>
 
-        <div class="about">
-            <p>
-                Shreeji Institute विद्यार्थियों को बेहतर शिक्षा,
-                मार्गदर्शन और प्रतियोगी परीक्षाओं की तैयारी के लिए
-                एक बेहतर learning environment प्रदान करने के उद्देश्य से बनाया गया है।
-            </p>
+    <p>
+        Shreeji Institute is committed to providing quality education,
+        proper guidance and a better learning environment for students.
+    </p>
+
+    <p>
+        हमारा उद्देश्य विद्यार्थियों को सही मार्गदर्शन देकर
+        उनके उज्ज्वल भविष्य की ओर आगे बढ़ाना है।
+    </p>
+</section>
+
+<section id="courses">
+    <h2 class="section-title">Our Courses</h2>
+
+    <div class="courses">
+
+        <div class="course">
+            <h3>IAS / UPSC</h3>
+            <p>Complete preparation and guidance for Civil Services.</p>
         </div>
-    </section>
 
-    <section id="courses">
-        <h2 class="title">Our Courses</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>IAS / UPSC</h3>
-                <p>UPSC Civil Services की बेहतर तैयारी।</p>
-            </div>
-
-            <div class="card">
-                <h3>MPPSC</h3>
-                <p>MPPSC परीक्षा के लिए structured preparation।</p>
-            </div>
-
-            <div class="card">
-                <h3>Vyapam</h3>
-                <p>MP की विभिन्न competitive examinations की तैयारी।</p>
-            </div>
-
-            <div class="card">
-                <h3>SSC</h3>
-                <p>SSC एवं अन्य competitive exams की तैयारी।</p>
-            </div>
-
+        <div class="course">
+            <h3>MPPSC</h3>
+            <p>Focused preparation for Madhya Pradesh Public Service Commission.</p>
         </div>
-    </section>
 
-    <section id="contact">
-        <h2 class="title">Contact Us</h2>
-
-        <div class="contact">
-            <p>📍 Khargone, Madhya Pradesh</p>
-            <p>📞 Admission एवं जानकारी के लिए संपर्क करें</p>
-            <p>📧 Email: info@shreejiinstitute.com</p>
-
-            <br>
-
-            <a href="#" class="btn">Contact Now</a>
+        <div class="course">
+            <h3>Vyapam</h3>
+            <p>Preparation for various MP competitive examinations.</p>
         </div>
-    </section>
 
-    <footer>
-        <p>© 2026 Shreeji Institute. All Rights Reserved.</p>
-    </footer>
+        <div class="course">
+            <h3>SSC</h3>
+            <p>Preparation for SSC and other government examinations.</p>
+        </div>
+
+        <div class="course">
+            <h3>All Competitive Exams</h3>
+            <p>Guidance and preparation for various competitive examinations.</p>
+        </div>
+
+        <div class="course">
+            <h3>All Courses</h3>
+            <p>Courses according to students' educational and career needs.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <p>🏫 <b>Shreeji Institute</b></p>
+    <p>📍 Gandi Nagar, Khargone</p>
+    <p>📞 7724014133</p>
+
+    <br>
+
+    <a href="tel:7724014133" class="btn">📞 Call Now</a>
+
+    <a href="https://wa.me/917724014133" class="btn">
+        💬 WhatsApp
+    </a>
+</section>
+
+<footer>
+    © 2026 Shreeji Institute | Gandi Nagar, Khargone
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/917724014133"
+   target="_blank">
+   💬
+</a>
 
 </body>
 </html>
