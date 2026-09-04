@@ -6,30 +6,39 @@
 
 <title>Shreeji Institute | Khargone</title>
 
+<meta name="description" content="Shreeji Institute, Gandi Nagar, Khargone - Quality Education and Competitive Exam Preparation">
+
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
+    font-family:Arial,Helvetica,sans-serif;
     background:#f5f7fb;
     color:#222;
     line-height:1.6;
 }
 
 header{
-    background:linear-gradient(135deg,#173b8f,#245dcc);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#123b8f;
     color:white;
-    padding:20px 8%;
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    position:sticky;
-    top:0;
-    z-index:100;
 }
 
 .logo{
@@ -37,72 +46,135 @@ header{
     font-weight:bold;
 }
 
+.logo span{
+    color:#ffb300;
+}
+
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
+    margin-left:22px;
     font-weight:bold;
 }
 
+nav a:hover{
+    color:#ffb300;
+}
+
+/* HERO */
+
 .hero{
-    min-height:500px;
+    min-height:580px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:50px 20px;
-    background:linear-gradient(135deg,#e8f0ff,#ffffff);
+    padding:60px 20px;
+    background:linear-gradient(135deg,#eaf1ff,#ffffff);
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.badge{
+    display:inline-block;
+    background:#ffb300;
+    color:#111;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:45px;
-    color:#173b8f;
+    font-size:52px;
+    color:#123b8f;
     margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#ff7a00;
 }
 
 .hero p{
     font-size:20px;
-    margin-bottom:25px;
+    margin:10px 0;
+}
+
+.hero-buttons{
+    margin-top:30px;
 }
 
 .btn{
     display:inline-block;
-    padding:13px 25px;
+    padding:14px 25px;
+    margin:6px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
     background:#ff7a00;
     color:white;
-    text-decoration:none;
-    border-radius:7px;
-    font-weight:bold;
-    margin:5px;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .btn:hover{
-    opacity:.85;
+    transform:translateY(-2px);
+    opacity:.9;
 }
 
+.btn-blue{
+    background:#123b8f;
+}
+
+/* COMMON */
+
 section{
-    padding:60px 8%;
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
 }
 
 .section-title{
     text-align:center;
-    color:#173b8f;
-    font-size:32px;
-    margin-bottom:30px;
+    font-size:35px;
+    color:#123b8f;
+    margin-bottom:12px;
 }
+
+.section-subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:40px;
+}
+
+/* ABOUT */
 
 .about{
     background:white;
-    text-align:center;
 }
 
-.courses{
+.about-box{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* FEATURES */
+
+.features{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
 }
 
-.course{
+.feature{
     background:white;
     padding:30px 20px;
     text-align:center;
@@ -110,13 +182,92 @@ section{
     box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.course h3{
-    color:#173b8f;
+.feature-icon{
+    font-size:42px;
     margin-bottom:10px;
 }
 
+.feature h3{
+    color:#123b8f;
+    margin-bottom:8px;
+}
+
+/* COURSES */
+
+.course-section{
+    background:#f5f7fb;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+}
+
+.course{
+    background:white;
+    padding:30px 20px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.3s;
+}
+
+.course:hover{
+    transform:translateY(-5px);
+}
+
+.course-icon{
+    font-size:45px;
+}
+
+.course h3{
+    color:#123b8f;
+    margin:12px 0;
+}
+
+/* ENQUIRY */
+
+.enquiry{
+    background:white;
+}
+
+.form-box{
+    max-width:600px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 25px rgba(0,0,0,.1);
+    background:#fff;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea{
+    width:100%;
+    padding:14px;
+    margin:8px 0;
+    border:1px solid #ddd;
+    border-radius:7px;
+    font-size:16px;
+    outline:none;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus{
+    border-color:#123b8f;
+}
+
+.form-box textarea{
+    height:110px;
+    resize:none;
+}
+
+/* CONTACT */
+
 .contact{
-    background:#173b8f;
+    background:#123b8f;
     color:white;
     text-align:center;
 }
@@ -125,37 +276,49 @@ section{
     color:white;
 }
 
-.contact p{
-    font-size:18px;
-    margin:8px;
+.contact-info{
+    margin:25px 0;
+    font-size:19px;
 }
 
+/* FOOTER */
+
 footer{
-    background:#101d38;
+    background:#0b1d3d;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:25px 15px;
 }
+
+footer p{
+    margin:5px;
+}
+
+/* WHATSAPP */
 
 .whatsapp{
     position:fixed;
     right:20px;
     bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
     background:#25D366;
     color:white;
-    width:58px;
-    height:58px;
-    border-radius:50%;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
+    font-size:30px;
     text-decoration:none;
-    font-size:27px;
-    box-shadow:0 4px 15px rgba(0,0,0,.3);
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    z-index:999;
 }
 
+/* MOBILE */
+
 @media(max-width:700px){
-    header{
+
+    .navbar{
         flex-direction:column;
         gap:12px;
     }
@@ -165,12 +328,28 @@ footer{
         font-size:14px;
     }
 
+    .hero{
+        min-height:520px;
+    }
+
     .hero h1{
-        font-size:34px;
+        font-size:36px;
     }
 
     .hero p{
         font-size:17px;
+    }
+
+    .section-title{
+        font-size:29px;
+    }
+
+    section{
+        padding:55px 15px;
+    }
+
+    .form-box{
+        padding:20px;
     }
 }
 </style>
@@ -178,134 +357,401 @@ footer{
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-    <div class="logo">Shreeji Institute</div>
+<div class="navbar">
+
+    <div class="logo">
+        Shreeji <span>Institute</span>
+    </div>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
+        <a href="#enquiry">Admission</a>
         <a href="#contact">Contact</a>
     </nav>
+
+</div>
 </header>
 
+
+<!-- HERO -->
+
 <section class="hero" id="home">
-    <div>
-        <h1>Welcome to Shreeji Institute</h1>
 
-        <p>
-            Quality Education • Better Guidance • Bright Future
-        </p>
+<div class="hero-content">
 
-        <p>
-            📍 Gandi Nagar, Khargone
-        </p>
-
-        <a href="#contact" class="btn">Admission Enquiry</a>
+    <div class="badge">
+        🎓 Admissions Open
     </div>
+
+    <h1>
+        Welcome to <span>Shreeji Institute</span>
+    </h1>
+
+    <p>
+        Quality Education • Better Guidance • Bright Future
+    </p>
+
+    <p>
+        📍 Gandi Nagar, Khargone
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#enquiry" class="btn">
+            📝 Admission Enquiry
+        </a>
+
+        <a href="https://wa.me/917724014133"
+           target="_blank"
+           class="btn btn-blue">
+            💬 WhatsApp Us
+        </a>
+
+    </div>
+
+</div>
+
 </section>
+
+
+<!-- ABOUT -->
 
 <section class="about" id="about">
-    <h2 class="section-title">About Shreeji Institute</h2>
 
-    <p>
-        Shreeji Institute is committed to providing quality education,
-        proper guidance and a better learning environment for students.
+<div class="container">
+
+    <h2 class="section-title">
+        About Shreeji Institute
+    </h2>
+
+    <p class="section-subtitle">
+        शिक्षा से सफलता की ओर
     </p>
 
-    <p>
-        हमारा उद्देश्य विद्यार्थियों को सही मार्गदर्शन देकर
-        उनके उज्ज्वल भविष्य की ओर आगे बढ़ाना है।
-    </p>
+    <div class="about-box">
+
+        <p>
+            Shreeji Institute का उद्देश्य विद्यार्थियों को
+            गुणवत्तापूर्ण शिक्षा, सही मार्गदर्शन और बेहतर
+            learning environment प्रदान करना है।
+        </p>
+
+        <br>
+
+        <p>
+            हमारा लक्ष्य विद्यार्थियों को प्रतियोगी परीक्षाओं
+            और उनके उज्ज्वल भविष्य के लिए बेहतर तरीके से तैयार करना है।
+        </p>
+
+    </div>
+
+</div>
+
 </section>
 
-<section id="courses">
-    <h2 class="section-title">Our Courses</h2>
+
+<!-- WHY CHOOSE US -->
+
+<section>
+
+<div class="container">
+
+    <h2 class="section-title">
+        Why Choose Shreeji Institute?
+    </h2>
+
+    <p class="section-subtitle">
+        विद्यार्थियों की सफलता हमारी प्राथमिकता
+    </p>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <h3>Expert Guidance</h3>
+            <p>
+                विद्यार्थियों को सही दिशा और बेहतर मार्गदर्शन।
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📚</div>
+            <h3>Quality Education</h3>
+            <p>
+                गुणवत्तापूर्ण शिक्षा और अध्ययन सामग्री।
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">👨‍🎓</div>
+            <h3>Student Focused</h3>
+            <p>
+                प्रत्येक विद्यार्थी की learning पर विशेष ध्यान।
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🏆</div>
+            <h3>Career Support</h3>
+            <p>
+                परीक्षा और career preparation में सहयोग।
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section class="course-section" id="courses">
+
+<div class="container">
+
+    <h2 class="section-title">
+        Our Courses
+    </h2>
+
+    <p class="section-subtitle">
+        Competitive Exams की तैयारी के लिए बेहतर मार्गदर्शन
+    </p>
 
     <div class="courses">
 
         <div class="course">
+            <div class="course-icon">🏛️</div>
             <h3>IAS / UPSC</h3>
-            <p>Complete preparation and guidance for Civil Services.</p>
+            <p>
+                Civil Services Examination की तैयारी।
+            </p>
         </div>
 
         <div class="course">
+            <div class="course-icon">📖</div>
             <h3>MPPSC</h3>
-            <p>Focused preparation for Madhya Pradesh Public Service Commission.</p>
+            <p>
+                Madhya Pradesh Public Service Commission की तैयारी।
+            </p>
         </div>
 
         <div class="course">
+            <div class="course-icon">📝</div>
             <h3>Vyapam</h3>
-            <p>Preparation for various MP competitive examinations.</p>
+            <p>
+                विभिन्न MP Competitive Exams की तैयारी।
+            </p>
         </div>
 
         <div class="course">
+            <div class="course-icon">🎯</div>
             <h3>SSC</h3>
-            <p>Preparation for SSC and other government examinations.</p>
+            <p>
+                SSC एवं अन्य Government Exams की तैयारी।
+            </p>
         </div>
 
         <div class="course">
-            <h3>All Competitive Exams</h3>
-            <p>Guidance and preparation for various competitive examinations.</p>
+            <div class="course-icon">🏆</div>
+            <h3>Other Exams</h3>
+            <p>
+                विभिन्न Competitive Examinations के लिए guidance।
+            </p>
         </div>
 
         <div class="course">
+            <div class="course-icon">🎓</div>
             <h3>All Courses</h3>
-            <p>Courses according to students' educational and career needs.</p>
+            <p>
+                विद्यार्थियों की आवश्यकता के अनुसार courses।
+            </p>
         </div>
 
     </div>
+
+</div>
+
 </section>
+
+
+<!-- ADMISSION ENQUIRY -->
+
+<section class="enquiry" id="enquiry">
+
+<div class="container">
+
+    <h2 class="section-title">
+        Admission Enquiry
+    </h2>
+
+    <p class="section-subtitle">
+        नीचे जानकारी भरें और WhatsApp पर enquiry भेजें
+    </p>
+
+    <div class="form-box">
+
+        <form onsubmit="sendWhatsApp(); return false;">
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Student Name"
+                required
+            >
+
+            <input
+                id="mobile"
+                type="tel"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+            >
+
+            <select id="course" required>
+
+                <option value="">
+                    Select Course
+                </option>
+
+                <option>IAS / UPSC</option>
+                <option>MPPSC</option>
+                <option>Vyapam</option>
+                <option>SSC</option>
+                <option>Other Competitive Exam</option>
+
+            </select>
+
+            <textarea
+                id="message"
+                placeholder="Your Message">
+            </textarea>
+
+            <button
+                type="submit"
+                class="btn"
+                style="width:100%;"
+            >
+                📲 Send Enquiry on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
-    <h2 class="section-title">Admission Enquiry</h2>
 
-    <p>📝 अपना विवरण भरें</p>
+<div class="container">
 
-    <form onsubmit="sendWhatsApp(); return false;"
-          style="max-width:500px;margin:25px auto;text-align:left;">
+    <h2 class="section-title">
+        Contact Us
+    </h2>
 
-        <input id="name" type="text" placeholder="Student Name" required
-        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;">
+    <div class="contact-info">
 
-        <input id="mobile" type="tel" placeholder="Mobile Number" required
-        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;">
+        <p>🏫 <strong>Shreeji Institute</strong></p>
 
-        <select id="course" required
-        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;">
+        <p>📍 Gandi Nagar, Khargone</p>
 
-            <option value="">Select Course</option>
-            <option>IAS / UPSC</option>
-            <option>MPPSC</option>
-            <option>Vyapam</option>
-            <option>SSC</option>
-            <option>Other Competitive Exam</option>
-        </select>
+        <p>📞 7724014133</p>
 
-        <textarea id="message"
-        placeholder="Your Message"
-        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;height:100px;"></textarea>
+    </div>
 
-        <button type="submit" class="btn"
-        style="border:0;cursor:pointer;width:100%;">
-            📲 Send Enquiry on WhatsApp
-        </button>
+    <a
+        href="tel:7724014133"
+        class="btn"
+    >
+        📞 Call Now
+    </a>
 
-    </form>
+    <a
+        href="https://wa.me/917724014133"
+        target="_blank"
+        class="btn"
+    >
+        💬 WhatsApp
+    </a>
 
-    <p>📍 Gandi Nagar, Khargone</p>
-    <p>📞 7724014133</p>
+</div>
+
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-    © 2026 Shreeji Institute | Gandi Nagar, Khargone
+
+    <p>
+        © 2026 Shreeji Institute. All Rights Reserved.
+    </p>
+
+    <p>
+        Gandi Nagar, Khargone | 📞 7724014133
+    </p>
+
 </footer>
 
-<a class="whatsapp"
-   href="https://wa.me/917724014133"
-   target="_blank">
-   💬
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/917724014133"
+    target="_blank"
+    title="Chat on WhatsApp"
+>
+    💬
 </a>
+
+
+<!-- WHATSAPP FORM SCRIPT -->
+
+<script>
+
+function sendWhatsApp(){
+
+    let name =
+        document.getElementById("name").value;
+
+    let mobile =
+        document.getElementById("mobile").value;
+
+    let course =
+        document.getElementById("course").value;
+
+    let message =
+        document.getElementById("message").value;
+
+    let text =
+        "New Admission Enquiry\n\n" +
+        "Student Name: " + name + "\n" +
+        "Mobile: " + mobile + "\n" +
+        "Course: " + course + "\n" +
+        "Message: " + message;
+
+    let url =
+        "https://wa.me/917724014133?text=" +
+        encodeURIComponent(text);
+
+    window.open(url, "_blank");
+
+}
+
+</script>
 
 </body>
 </html>
