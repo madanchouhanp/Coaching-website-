@@ -3,24 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreeji Institute</title>
+
+    <title>Shreeji Institute | Khargone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #123c73;
+            color: white;
+            padding: 18px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 15px;
+        }
+
+        nav {
+            background: white;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #123c73;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #123c73, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffb300;
+            color: #111;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 45px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            color: #123c73;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #123c73;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #123c73;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Welcome to Coaching Academy</h1>
-    <p>आपकी सफलता, हमारी जिम्मेदारी।</p>
+    <header>
+        <h1>Shreeji Institute</h1>
+        <p>Quality Education • Better Guidance • Bright Future</p>
+    </header>
 
-    <h2>हमारे Courses</h2>
-    <ul>
-        <li>IAS / UPSC</li>
-        <li>MPPSC</li>
-        <li>Vyapam</li>
-        <li>SSC</li>
-    </ul>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <h2>Contact Us</h2>
-    <p>Admission और जानकारी के लिए संपर्क करें।</p>
+    <section class="hero" id="home">
+        <h2>Welcome to Shreeji Institute</h2>
+        <p>अपने लक्ष्य को सफलता में बदलने की शुरुआत आज से करें।</p>
+        <a href="#contact" class="btn">Admission Enquiry</a>
+    </section>
+
+    <section id="about">
+        <h2 class="title">About Shreeji Institute</h2>
+
+        <div class="about">
+            <p>
+                Shreeji Institute विद्यार्थियों को बेहतर शिक्षा,
+                मार्गदर्शन और प्रतियोगी परीक्षाओं की तैयारी के लिए
+                एक बेहतर learning environment प्रदान करने के उद्देश्य से बनाया गया है।
+            </p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2 class="title">Our Courses</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>IAS / UPSC</h3>
+                <p>UPSC Civil Services की बेहतर तैयारी।</p>
+            </div>
+
+            <div class="card">
+                <h3>MPPSC</h3>
+                <p>MPPSC परीक्षा के लिए structured preparation।</p>
+            </div>
+
+            <div class="card">
+                <h3>Vyapam</h3>
+                <p>MP की विभिन्न competitive examinations की तैयारी।</p>
+            </div>
+
+            <div class="card">
+                <h3>SSC</h3>
+                <p>SSC एवं अन्य competitive exams की तैयारी।</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="title">Contact Us</h2>
+
+        <div class="contact">
+            <p>📍 Khargone, Madhya Pradesh</p>
+            <p>📞 Admission एवं जानकारी के लिए संपर्क करें</p>
+            <p>📧 Email: info@shreejiinstitute.com</p>
+
+            <br>
+
+            <a href="#" class="btn">Contact Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Shreeji Institute. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
