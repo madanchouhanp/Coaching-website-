@@ -258,19 +258,43 @@ footer{
 </section>
 
 <section class="contact" id="contact">
-    <h2 class="section-title">Contact Us</h2>
+    <h2 class="section-title">Admission Enquiry</h2>
 
-    <p>🏫 <b>Shreeji Institute</b></p>
+    <p>📝 अपना विवरण भरें</p>
+
+    <form onsubmit="sendWhatsApp(); return false;"
+          style="max-width:500px;margin:25px auto;text-align:left;">
+
+        <input id="name" type="text" placeholder="Student Name" required
+        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;">
+
+        <input id="mobile" type="tel" placeholder="Mobile Number" required
+        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;">
+
+        <select id="course" required
+        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;">
+
+            <option value="">Select Course</option>
+            <option>IAS / UPSC</option>
+            <option>MPPSC</option>
+            <option>Vyapam</option>
+            <option>SSC</option>
+            <option>Other Competitive Exam</option>
+        </select>
+
+        <textarea id="message"
+        placeholder="Your Message"
+        style="width:100%;padding:14px;margin:8px 0;border-radius:6px;border:0;height:100px;"></textarea>
+
+        <button type="submit" class="btn"
+        style="border:0;cursor:pointer;width:100%;">
+            📲 Send Enquiry on WhatsApp
+        </button>
+
+    </form>
+
     <p>📍 Gandi Nagar, Khargone</p>
     <p>📞 7724014133</p>
-
-    <br>
-
-    <a href="tel:7724014133" class="btn">📞 Call Now</a>
-
-    <a href="https://wa.me/917724014133" class="btn">
-        💬 WhatsApp
-    </a>
 </section>
 
 <footer>
